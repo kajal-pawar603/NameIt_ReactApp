@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+//react DOM is a Library which uses the render method 
+import ReactDOM from 'react-dom';
+ 
+import App from './Components/App/App';
+
+// In this render method it uses the teact componet 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+//   render method uses the app component and it
+//  render on to the div i.e having the id root
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
